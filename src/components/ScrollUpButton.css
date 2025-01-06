@@ -1,0 +1,33 @@
+.scroll-up-btn {
+  position: fixed;
+  height: 4rem;
+  width: 4rem;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e5e5e5;
+  color: #a19b94;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-up-btn:hover {
+  transform: scale(1.1);
+}
+
+.scroll-up-icon {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scroll-up-btn:hover .scroll-up-icon {
+  transform: translateY(-5px);
+}

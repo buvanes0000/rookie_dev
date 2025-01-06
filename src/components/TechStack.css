@@ -1,0 +1,81 @@
+/* Parent Container Perspective */
+.tech-stack-container {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Individual Cards Styling */
+.tech-stack-card {
+  width: 150px;
+  height: 140px;
+  border-radius: 15px;
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  background: #171714;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-out, background 0.3s, box-shadow 0.3s;
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.tech-stack-card:hover {
+  background: var(--hover-color);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
+    0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+.tech-stack-title {
+  text-align: center;
+}
+
+
+
+/* Icon Styling */
+.tech-icon {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #a19b94;
+}
+.tech-stack-card:hover .tech-icon {
+  color: #171717;
+}
+
+/* Card Title */
+.tech-stack-card h3 {
+  font-size: 1.2rem;
+  text-align: center;
+   color: #a19b94;
+  
+}
+
+.tech-stack-card:hover h3 {
+  transform: translateY(-10px);
+  color: #171717;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tech-stack-title {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .tech-stack-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .tech-stack-card h3 {
+    font-size: 1rem;
+  }
+}
+
